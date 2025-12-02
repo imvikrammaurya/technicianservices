@@ -11,7 +11,12 @@ import Services from "./Services";
 
 export default function HomePage() {
   return (
-    <div className=" ">
+    <div
+      className="z-0 bg-gradient-to-br
+from-[#91ddcf]
+via-[#f7f9f2]
+to-[#e8c5e5] "
+    >
       <Navbar />
       <Hero />
       <Services />
