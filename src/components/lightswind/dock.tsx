@@ -81,21 +81,23 @@ function DockItem({
   return (
     <motion.div
       ref={ref}
-      style={{ width: size, height: size }}
+      style={{ width: size, height: size, willChange: "width, height" }}
       onHoverStart={() => isHovered.set(1)}
       onHoverEnd={() => isHovered.set(0)}
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       onClick={onClick}
       className="relative inline-flex items-center justify-center rounded-full 
-      bg-background    shadow-md  "
+      bg-white/20 border border-white/20 shadow-lg cursor-pointer transition-colors hover:bg-white/30"
       tabIndex={0}
       role="button"
       aria-haspopup="true"
     >
-      <div className="flex items-center justify-center">{icon}</div>
+      <div className="flex items-center justify-center text-gray-800">
+        {icon}
+      </div>
       {badgeCount !== undefined && badgeCount > 0 && (
-        <span className="absolute -top-2 -right-2 flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full">
+        <span className="absolute -top-2 -right-2 flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full border-2 border-white">
           {badgeCount > 99 ? "99+" : badgeCount}
         </span>
       )}
@@ -103,11 +105,11 @@ function DockItem({
         {showLabel && (
           <motion.div
             initial={{ opacity: 0, y: 0 }}
-            animate={{ opacity: 1, y: -10 }}
+            animate={{ opacity: 1, y: 10 }}
             exit={{ opacity: 0, y: 0 }}
             transition={{ duration: 0.2 }}
-            className="absolute -top-6 left-1/2 w-fit whitespace-pre rounded-md 
-            border border   bg-[#060606] px-2 py-0.5 text-xs text-white"
+            className="absolute top-full mt-2 left-1/2 w-fit whitespace-pre rounded-md 
+            border border-gray-200 bg-white/90 backdrop-blur-sm px-2 py-0.5 text-xs text-gray-800 shadow-md"
             style={{ x: "-50%" }}
             role="tooltip"
           >
@@ -141,7 +143,7 @@ interface DockProps {
 export default function Dock({
   items,
   className = "",
-  spring = { mass: 0.1, stiffness: 150, damping: 12 },
+  spring = { mass: 0.5, stiffness: 150, damping: 15 },
   magnification = 70,
   distance = 200,
   panelHeight = 64,
@@ -165,19 +167,23 @@ export default function Dock({
     <motion.div
       style={{ height: animatedHeight }}
       className="mx-2 flex max-w-full items-center"
+      // --- FIX STARTS HERE ---
+      // We moved the mouse listeners to this OUTER container.
+      // This container grows in height, so it catches the mouse even if you
+      // approach from the bottom.
+      onMouseMove={({ pageX }) => {
+        isHovered.set(1);
+        mouseX.set(pageX);
+      }}
+      onMouseLeave={() => {
+        isHovered.set(0);
+        mouseX.set(Infinity);
+      }}
+      // --- FIX ENDS HERE ---
     >
       <motion.div
-        onMouseMove={({ pageX }) => {
-          isHovered.set(1);
-          mouseX.set(pageX);
-        }}
-        onMouseLeave={() => {
-          isHovered.set(0);
-          mouseX.set(Infinity);
-        }}
-        className={`absolute bottom-2 left-1/2 -translate-x-1/2 transform 
-            flex items-end gap-4 w-fit rounded-2xl 
-            border-2 border   px-4 pb-2 ${className}`}
+        className={`flex items-center gap-6 w-fit rounded-2xl 
+            border border-white/20 bg-white/10 backdrop-blur-lg shadow-xl px-4 py-2 ${className}`}
         style={{ height: panelHeight }}
         role="toolbar"
         aria-label="Application dock"

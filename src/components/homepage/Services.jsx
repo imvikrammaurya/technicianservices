@@ -37,7 +37,7 @@ export default function Services() {
   return (
     <>
       <div>
-        <div className="flex flex-col items-center mt-35">
+        <div className="flex flex-col items-center mt-28">
           <p className="font-extrabold text-3xl">Services</p>
           <h4>What we repair and install</h4>
           <p>Fast, reliable work on the equipment that matters most to you.</p>

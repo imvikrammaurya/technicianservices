@@ -59,7 +59,7 @@ const SeasonCard = ({
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-colors duration-300"></div>
+      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
 
       <div className="relative md:absolute md:bottom-20 z-10 space-y-2">
         <h2 className="text-xl font-bold text-white font-heading tracking-wide">

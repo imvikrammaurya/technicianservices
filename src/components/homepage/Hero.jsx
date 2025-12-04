@@ -6,7 +6,7 @@ export default function Hero() {
   const { theme, isDark } = useTheme();
   return (
     <>
-      <div className="container my-25  mx-auto px-25  ">
+      <div className="container mb-25 mt-15 mx-auto px-25  ">
         <div className="flex flex-row bg-linear-to-br from-white/30 via-gray-100/10 to-gray-200/40 backdrop-blur-xl rounded-l-lg ">
           <div className="p-20 ">
             <h4 className="font-semibold text-5xl mb-8">

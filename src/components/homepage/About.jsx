@@ -13,7 +13,7 @@ export default function About() {
       <div className="flex flex-col container mt-35  mx-auto px-25  ">
         <div className="flex flex-row">
           <div className="w-1/2">
-            <h4 className="font-extrabold text-3xl">About</h4>
+            <h4 className="font-extrabold text-3xl mb-8">About</h4>
             <p className="ph">Built on experience and honest work</p>
           </div>
           <div className="w-1/2">
@@ -35,8 +35,8 @@ export default function About() {
             </Button>
           </div>
         </div>
-        <div>
-          <img src={aboutImg} alt="" />
+        <div className="h-[500px] w-full max-w-6xl mx-auto overflow-hidden rounded-xl shadow-lg">
+          <img className="w-full h-full object-cover" src={aboutImg} alt="" />
         </div>
       </div>
     </>
