@@ -1,5 +1,10 @@
 import { useRef, useState } from "react";
-import { motion, useMotionValue, useTransform, useMotionTemplate } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useTransform,
+  useMotionTemplate,
+} from "framer-motion";
 import { cn } from "../lib/utils"; // Assuming cn is a utility for conditionally joining class names
 
 export const InteractiveCard = ({
@@ -35,8 +40,16 @@ export const InteractiveCard = ({
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const rotateXTrans = useTransform(y, [0, 1], [rotationFactor * 15, -rotationFactor * 15]);
-  const rotateYTrans = useTransform(x, [0, 1], [-rotationFactor * 15, rotationFactor * 15]);
+  const rotateXTrans = useTransform(
+    y,
+    [0, 1],
+    [rotationFactor * 15, -rotationFactor * 15]
+  );
+  const rotateYTrans = useTransform(
+    x,
+    [0, 1],
+    [-rotationFactor * 15, rotationFactor * 15]
+  );
 
   const handlePointerMove = (e: React.PointerEvent) => {
     const bounds = cardRef.current?.getBoundingClientRect();

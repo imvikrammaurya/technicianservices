@@ -12,7 +12,7 @@ import Services from "./Services";
 export default function HomePage() {
   return (
     <div
-      className="z-0 bg-gradient-to-br
+      className="z-0 bg-linear-to-br
 from-[#91ddcf]
 via-[#f7f9f2]
 to-[#e8c5e5] "

@@ -22,6 +22,16 @@
     margin-bottom: 1rem;
   }
 
+  .ph {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+  }
+
   p {
     font-family: var(--font-sans);
     color: var(--color-text);

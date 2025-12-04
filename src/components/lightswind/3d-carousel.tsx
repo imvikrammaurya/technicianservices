@@ -1,12 +1,7 @@
 // components/ThreeDCarousel.tsx
 "use client";
 
-import React, {
-  useRef,
-  useEffect,
-  useState,
-  TouchEvent,
-} from "react";
+import React, { useRef, useEffect, useState, TouchEvent } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/app/component2/ui/card";
 import { useIsMobile } from "../hooks/use-mobile";

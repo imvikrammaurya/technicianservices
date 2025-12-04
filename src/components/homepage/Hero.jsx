@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <>
       <div className="container my-25  mx-auto px-25  ">
-        <div className="flex flex-row bg-gradient-to-br from-white/30 via-gray-100/10 to-gray-200/40 backdrop-blur-xl rounded-l-lg ">
+        <div className="flex flex-row bg-linear-to-br from-white/30 via-gray-100/10 to-gray-200/40 backdrop-blur-xl rounded-l-lg ">
           <div className="p-20 ">
             <h4 className="font-semibold text-5xl mb-8">
               Expert repair and installation when you need it
