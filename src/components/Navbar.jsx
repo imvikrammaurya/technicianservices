@@ -41,7 +41,7 @@ export default function Navbar() {
     },
     {
       // Location: Opens Google Maps
-      // Replace 'New York' with your actual address or coordinates
+      // Replace 'New Delhi' with your actual address or coordinates
       icon: <MapPin size={22} className="text-red-600" />,
       label: "Location",
       onClick: () =>

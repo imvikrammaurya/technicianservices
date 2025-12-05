@@ -44,7 +44,11 @@ export default function Hero() {
             </div>
           </div>
           <div className="">
-            <img src="src\assets\Images\hero.jpg" className="p-3" alt="" />
+            <img
+              src="src\assets\Images\hero.jpg"
+              className="p-3 rounded-3xl"
+              alt=""
+            />
           </div>
         </div>
       </div>
