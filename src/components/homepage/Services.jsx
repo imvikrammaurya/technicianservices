@@ -40,7 +40,7 @@ export default function Services() {
         <div className="flex flex-col items-center mt-28">
           <p className="font-extrabold text-3xl">Services</p>
           <h4>What we repair and install</h4>
-          <p>Fast, reliable work on the equipment that matters most to you.</p>
+          <p>Fast, reliable work of the equipment that matters most to you.</p>
         </div>
         <div className="my-5  mx-auto px-32">
           <SeasonalHoverCards cards={serviceCards} />
