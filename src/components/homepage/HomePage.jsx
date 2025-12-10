@@ -19,14 +19,35 @@ via-[#f7f9f2]
 to-[#e8c5e5] "
     >
       <FullNavbar />
-      <Hero />
-      <Services />
-      <About />
-      <CustomerStories />
-      <DoBest />
-      <Cta />
-      <QAndA />
-      <GetInTouch />
+
+      {/* Add IDs here */}
+      <section id="hero">
+        <Hero />
+      </section>
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="customer-stories">
+        <CustomerStories />
+      </section>
+
+      <section id="cta">
+        <Cta />
+      </section>
+
+      <section id="qanda">
+        <QAndA />
+      </section>
+
+      <section id="get-in-touch">
+        <GetInTouch />
+      </section>
 
       <Footer />
     </div>
