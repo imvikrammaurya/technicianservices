@@ -1,5 +1,6 @@
 import Footer from "../Footer";
 import Navbar from "../Navbar";
+import FullNavbar from "../FullNavbar";
 import About from "./About";
 import Cta from "./Cta";
 import CustomerStories from "./CustomerStories";
@@ -17,7 +18,7 @@ from-[#91ddcf]
 via-[#f7f9f2]
 to-[#e8c5e5] "
     >
-      <Navbar />
+      <FullNavbar />
       <Hero />
       <Services />
       <About />

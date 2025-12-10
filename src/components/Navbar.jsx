@@ -6,7 +6,7 @@ import {
   MapPin,
   MessageCircle,
 } from "lucide-react";
-import Dock from "@/components/lightswind/dock";
+import Dock from "@/components/ui/dock";
 
 export default function Navbar() {
   const navItems = [

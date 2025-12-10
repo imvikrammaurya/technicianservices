@@ -1,5 +1,4 @@
 import Button from "../ui/Button";
-import { InteractiveCard } from "@/components/lightswind/interactive-card";
 import aboutImg from "../../assets/Images/About_section_image.png";
 
 export default function About() {

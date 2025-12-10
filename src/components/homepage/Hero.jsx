@@ -1,6 +1,6 @@
 import { useTheme } from "../../context/ThemeContext";
 import Button from "../ui/Button";
-import { BorderBeam } from "@/components/lightswind/border-beam";
+import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Hero() {
   const { theme, isDark } = useTheme();

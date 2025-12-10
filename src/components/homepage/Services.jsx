@@ -1,4 +1,4 @@
-import { SeasonalHoverCards } from "@/components/lightswind/seasonal-hover-cards";
+import { SeasonalHoverCards } from "@/components/ui/seasonal-hover-cards";
 import ac1 from "../../assets/Images/ac_service_1.png";
 import ac2 from "../../assets/Images/ac_service_2.png";
 import ac3 from "../../assets/Images/ac_service_3.png";
