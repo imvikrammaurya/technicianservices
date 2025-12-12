@@ -9,7 +9,7 @@ export default function About() {
   ];
   return (
     <>
-      <div className="flex flex-col container mt-35  mx-auto px-25  ">
+      <div className="flex flex-col container mt-35   px-25  ">
         <div className="flex flex-row">
           <div className="w-1/2">
             <h4 className="font-extrabold text-3xl mb-8">About</h4>
