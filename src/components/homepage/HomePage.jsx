@@ -4,7 +4,7 @@ import FullNavbar from "../FullNavbar";
 import About from "./About";
 import Cta from "./Cta";
 import CustomerStories from "./CustomerStories";
-import DoBest from "./Dobest";
+
 import GetInTouch from "./GetInTouch";
 import Hero from "./Hero";
 import QAndA from "./Qanda";
@@ -45,9 +45,9 @@ to-[#e8c5e5] "
         <QAndA />
       </section>
 
-      <section id="get-in-touch">
+      {/* <section id="get-in-touch">
         <GetInTouch />
-      </section>
+      </section> */}
 
       <Footer />
     </div>
