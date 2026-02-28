@@ -59,8 +59,8 @@ message: ${formData.message}`;
     "shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent";
 
   return (
-    <div className="p-4">
-      <div className="w-full h-full rounded-lg shadow-md p-8">
+    <div className="p-4 sm:p-6">
+      <div className="w-full h-full rounded-lg shadow-md p-4 sm:p-8 bg-white/70 backdrop-blur-md">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Contact Us
         </h2>

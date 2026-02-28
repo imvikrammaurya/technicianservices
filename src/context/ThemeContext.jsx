@@ -104,6 +104,7 @@ export function ThemeProvider({ children }) {
 }
 
 // 4. Custom Hook for easy access
+// eslint-disable-next-line react-refresh/only-export-components
 export function useTheme() {
   return useContext(ThemeContext);
 }

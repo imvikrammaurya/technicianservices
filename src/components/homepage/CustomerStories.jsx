@@ -6,9 +6,11 @@ import {
 
 export default function CustomerStories() {
   return (
-    <div className="flex flex-col container mt-35  mx-auto px-25  ">
-      <div className="flex flex-col items-center text-center ">
-        <p className="font-extrabold text-3xl mb-4">Customer stories</p>
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-20">
+      <div className="flex flex-col items-center text-center">
+        <p className="font-extrabold text-2xl sm:text-3xl mb-4 text-primary">
+          Customer stories
+        </p>
         <p>Hear what our clients have to say about our work.</p>
       </div>
 

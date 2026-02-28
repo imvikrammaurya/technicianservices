@@ -1,7 +1,7 @@
 export default function GetInTouch() {
   return (
     <>
-      <div className="flex flex-col container mt-35  mx-auto px-25  ">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-20">
         <div className="flex flex-col text-center">
           <p>Reach</p>
           <h4>Get in touch</h4>

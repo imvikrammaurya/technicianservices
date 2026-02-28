@@ -34,6 +34,7 @@ const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       value,
       defaultValue = [],
       onValueChange,
+      collapsible,
       children,
       ...props
     },
@@ -43,12 +44,12 @@ const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
       Array.isArray(value)
         ? value
         : value
-        ? [value]
-        : Array.isArray(defaultValue)
-        ? defaultValue
-        : defaultValue
-        ? [defaultValue]
-        : []
+          ? [value]
+          : Array.isArray(defaultValue)
+            ? defaultValue
+            : defaultValue
+              ? [defaultValue]
+              : []
     );
 
     React.useEffect(() => {
@@ -106,7 +107,7 @@ const AccordionItem = React.forwardRef<HTMLDivElement, AccordionItemProps>(
 AccordionItem.displayName = "AccordionItem";
 
 interface AccordionTriggerProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> { }
 
 const AccordionTrigger = React.forwardRef<
   HTMLButtonElement,
@@ -161,7 +162,7 @@ const AccordionTrigger = React.forwardRef<
 });
 AccordionTrigger.displayName = "AccordionTrigger";
 
-interface AccordionContentProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface AccordionContentProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 const AccordionContent = React.forwardRef<
   HTMLDivElement,

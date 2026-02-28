@@ -36,14 +36,20 @@ export default function Services() {
   ];
   return (
     <>
-      <div>
-        <div className="flex flex-col items-center mt-28">
-          <p className="font-extrabold text-3xl">Services</p>
-          <h4>What we repair and install</h4>
-          <p>Fast, reliable work of the equipment that matters most to you.</p>
+      <div className="mt-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center text-center">
+            <p className="font-extrabold text-2xl sm:text-3xl text-primary">
+              Services
+            </p>
+            <h4 className="mt-2">What we repair and install</h4>
+            <p className="max-w-2xl">
+              Fast, reliable work of the equipment that matters most to you.
+            </p>
+          </div>
         </div>
-        <div className="my-5  mx-auto px-32">
-          <SeasonalHoverCards cards={serviceCards} />
+        <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 mt-6">
+          <SeasonalHoverCards cards={serviceCards} className="px-0" />
         </div>
       </div>
     </>

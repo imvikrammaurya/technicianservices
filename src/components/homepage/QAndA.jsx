@@ -89,29 +89,31 @@ export default function QAndA() {
   const rightFaqs = allFaqs.slice(midIndex);
 
   return (
-    <div className="flex flex-col container mt-35 mx-auto px-4 lg:px-20">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-20">
       {/* Section Header */}
       <div className="text-center mb-5">
-        <h2 className="text-4xl font-bold font-heading text-primary mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold font-heading text-primary mb-4">
           Frequently Asked Questions
         </h2>
-        <p className="text-lg text-gray-600">Got questions? We have answers.</p>
+        <p className="text-base sm:text-lg text-gray-600">
+          Got questions? We have answers.
+        </p>
       </div>
 
       {/* Two-Column Grid Layout */}
-      <div className="grid px-20 grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 w-full items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 w-full items-start mt-8">
         {/* Column 1 */}
         <div>
           <Accordion type="single" collapsible className="flex flex-col gap-4">
             {leftFaqs.map((faq) => (
               <AccordionItem key={faq.value} value={faq.value}>
                 {/* FIX 1: Added 'text-xl' to make TITLE bigger */}
-                <AccordionTrigger className="text-xl">
+                <AccordionTrigger className="text-base sm:text-lg">
                   {faq.title}
                 </AccordionTrigger>
 
                 {/* FIX 2: Added 'text-lg' to make CONTENT bigger */}
-                <AccordionContent className="text-lg">
+                <AccordionContent className="text-sm sm:text-base">
                   {faq.content}
                 </AccordionContent>
               </AccordionItem>
@@ -125,12 +127,12 @@ export default function QAndA() {
             {rightFaqs.map((faq) => (
               <AccordionItem key={faq.value} value={faq.value}>
                 {/* FIX 1: Added 'text-xl' to make TITLE bigger */}
-                <AccordionTrigger className="text-xl">
+                <AccordionTrigger className="text-base sm:text-lg">
                   {faq.title}
                 </AccordionTrigger>
 
                 {/* FIX 2: Added 'text-lg' to make CONTENT bigger */}
-                <AccordionContent className="text-lg">
+                <AccordionContent className="text-sm sm:text-base">
                   {faq.content}
                 </AccordionContent>
               </AccordionItem>

@@ -1,24 +1,23 @@
-import { useTheme } from "../../context/ThemeContext";
 import Button from "../ui/Button";
 import { BorderBeam } from "@/components/ui/border-beam";
+import heroImg from "../../assets/Images/hero.jpg";
 
 export default function Hero() {
-  const { theme, isDark } = useTheme();
   return (
     <>
-      <div className="container mb-25  mx-auto px-25  mt-16">
-        <div className="flex flex-row bg-linear-to-br from-white/30 via-gray-100/10 to-gray-200/40 backdrop-blur-xl rounded-l-lg ">
-          <div className="p-20 ">
-            <h4 className="font-semibold text-5xl mb-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-16">
+        <div className="flex flex-col lg:flex-row bg-linear-to-br from-white/30 via-gray-100/10 to-gray-200/40 backdrop-blur-xl rounded-2xl overflow-hidden shadow-sm">
+          <div className="flex-1 p-6 sm:p-10 lg:p-14">
+            <h1 className="font-semibold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6 text-primary">
               Expert repair and installation when you need it
-            </h4>
-            <p className="mb-8">
+            </h1>
+            <p className="mb-8 max-w-prose text-base sm:text-lg text-gray-800/90">
               HomeTech Repair & Installations handles air conditioners, washing
               machines, and purtfiers with precision and care. We show up on
               time, do the work right, and leave your home running smooth.
             </p>
 
-            <div className="flex flex-row items-center gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <div className="relative w-fit rounded-md  z-20">
                 <BorderBeam
                   size={60}
@@ -43,11 +42,12 @@ export default function Hero() {
               <Button variant="ghost">Learn more</Button>
             </div>
           </div>
-          <div className="">
+          <div className="flex-1 p-4 sm:p-6 lg:p-8">
             <img
-              src="src\assets\Images\hero.jpg"
-              className="p-3 rounded-3xl"
-              alt=""
+              src={heroImg}
+              className="w-full h-full object-cover rounded-xl"
+              alt="Technician repairing an appliance"
+              loading="lazy"
             />
           </div>
         </div>
