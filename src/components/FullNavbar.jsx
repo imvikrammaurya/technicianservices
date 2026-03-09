@@ -188,7 +188,7 @@ export default function FullNavbar() {
             : gradientStyle
         }
       >
-        <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
+        <div className="container mx-auto px-4 min-[1152px]:px-8 flex items-center justify-between">
           {/* 1. LOGO */}
           <div
             className="flex items-center gap-2 cursor-pointer"
@@ -203,7 +203,7 @@ export default function FullNavbar() {
           </div>
 
           {/* 2. CENTER NAVIGATION (Hidden on Mobile) */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden min-[1152px]:flex items-center gap-4">
             {navLinks.map((link) => (
               <NavLinkButton
                 key={link.name}
@@ -269,7 +269,7 @@ export default function FullNavbar() {
             </button>
 
             <button
-              className="md:hidden ml-2 text-gray-700"
+              className="min-[1152px]:hidden ml-2 text-gray-700"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -279,7 +279,7 @@ export default function FullNavbar() {
 
         {/* 4. MOBILE MENU DROPDOWN */}
         <div
-          className={`md:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg flex flex-col p-4 gap-4 transition-all duration-300 origin-top ${
+          className={`min-[1152px]:hidden absolute top-full left-0 w-full bg-white border-t border-gray-100 shadow-lg flex flex-col p-4 gap-4 transition-all duration-300 origin-top ${
             mobileMenuOpen
               ? "scale-y-100 opacity-100"
               : "scale-y-0 opacity-0 pointer-events-none"

@@ -2,7 +2,7 @@ import ContactForm from "../ui/ContactForm";
 import { ShieldCheck, Clock, BadgeCent, Users, Star } from "lucide-react";
 export default function Cta() {
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-20">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16 lg:mt-20">
       <div className="text-center">
         <h4>Ready to get things fixed</h4>
       </div>

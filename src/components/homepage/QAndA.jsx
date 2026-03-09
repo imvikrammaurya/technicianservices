@@ -89,7 +89,7 @@ export default function QAndA() {
   const rightFaqs = allFaqs.slice(midIndex);
 
   return (
-    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-20">
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16 lg:mt-20">
       {/* Section Header */}
       <div className="text-center mb-5">
         <h2 className="text-3xl sm:text-4xl font-bold font-heading text-primary mb-4">

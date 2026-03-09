@@ -45,7 +45,7 @@ const SeasonCard = ({
   return (
     <div
       className={cn(
-        "group relative flex flex-col justify-end p-6 w-full md:w-1/3 h-[350px] lg:h-[450px] bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-all duration-500 hover:w-2/3",
+        "group relative flex flex-col justify-end p-5 sm:p-6 w-full h-72 sm:h-80 md:h-[350px] lg:h-[450px] bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-all duration-500 md:flex-1 md:basis-1/3 md:hover:basis-2/3",
         className
       )}
       // 4. Event Handlers to toggle state
@@ -68,8 +68,10 @@ const SeasonCard = ({
         <p className="text-sm text-gray-200">{subtitle}</p>
       </div>
 
-      <div className="mt-4 transform translate-y-6 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 relative z-10">
-        <p className="text-lg text-white font-medium">{description}</p>
+      <div className="mt-4 relative z-10 transition-all duration-500 opacity-100 translate-y-0 md:opacity-0 md:translate-y-6 md:group-hover:opacity-100 md:group-hover:translate-y-0">
+        <p className="text-sm sm:text-base text-white/95 font-medium leading-relaxed">
+          {description}
+        </p>
       </div>
     </div>
   );
@@ -82,7 +84,7 @@ export function SeasonalHoverCards({
   return (
     <div
       className={cn(
-        "flex flex-wrap md:flex-nowrap gap-4 w-full px-4",
+        "flex flex-wrap md:flex-nowrap gap-4 md:gap-5 w-full px-2 sm:px-4",
         className
       )}
     >
