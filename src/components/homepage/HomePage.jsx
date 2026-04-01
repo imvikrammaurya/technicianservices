@@ -7,7 +7,7 @@ import CustomerStories from "./CustomerStories";
 
 import GetInTouch from "./GetInTouch";
 import Hero from "./Hero";
-import QAndA from "./Qanda";
+import QAndA from "./QAndA";
 import Services from "./Services";
 
 export default function HomePage() {

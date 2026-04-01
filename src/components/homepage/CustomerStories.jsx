@@ -6,7 +6,7 @@ import {
 
 import googleGImg from "../../assets/Images/google-g.png";
 import riyaImg from "../../assets/Images/riya.png";
-import rahulImg from "../../assets/Images/r.png";
+import rahulImg from "../../assets/Images/R.png";
 import nikitaImg from "../../assets/Images/n.png";
 import snehaImg from "../../assets/Images/s.png";
 import aImg from "../../assets/Images/a.png";
